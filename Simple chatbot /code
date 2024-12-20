@@ -1,0 +1,39 @@
+# Pre-defined FAQ responses
+context = {
+    "hours": "We are open from 8:00 AM to 12:00 AM, Sunday through Sunday.",
+    "location": "Mars is located at 123 Main Street, Downtown.",
+    "menu": "Our menu includes coffee, tea, latte, Spanish latte, hot chocolate,and sandwiches.",
+    "contact": "You can reach us at (123) 456-7890 or email us at contact@bymars.com.",
+    "wifi": "Yes, we offer free Wi-Fi. The password is 'MarsCafe2024121'.",
+    "specials": "Today's specials include Pumpkin Spice Latte and Blueberry Muffins.",
+    "prices": "Coffee is 20LE,Sandwiches is 15LE  tea is 15LE,Spanish latte is 30LE and latte is 25LE ."
+}
+
+def chatbot():
+    print("Welcome to Café by Mars's Chatbot!")
+    print("Ask me anything about our café, or type 'exit' to quit.\n")
+    
+    while True:
+        # Get user input
+        user_input = input("You: ").lower()
+        
+        # Exit condition
+        if user_input in ["exit", "quit"]:
+            print("Bot: Thank you for chatting with us. Have a great day!")
+            break
+        
+        # Match keywords to responses
+        response_found = False
+        for keyword, response in context.items():
+            if keyword in user_input:
+                print(f"Bot: {response}")
+                response_found = True
+                break
+        
+        # Default response if no match
+        if not response_found:
+            print("Bot: I'm sorry, I didn't understand that. Can you rephrase?")
+
+# Run the chatbot
+if __name__ == "__main__":
+    chatbot()

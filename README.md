@@ -1,9 +1,9 @@
-# AI-Powered Document Summarization, Insights Extraction, and FAQ Chatbot
+# AI-Powered Document Summarization, Insights Extraction
 
 ## Project Overview
 This project combines two powerful AI-driven functionalities:
 1. **Document Summarization and Insights Extraction:** An advanced tool for processing, analyzing, and summarizing documents.
-2. **FAQ Chatbot for Café by Mars:** A chatbot designed to provide pre-defined responses to frequently asked questions about a café's operations.
+
 
 ## Features
 
@@ -15,10 +15,7 @@ This project combines two powerful AI-driven functionalities:
 - **Multi-format Support:** Process text from PDFs, DOCX files, plain text, and CSV files.
 - **User-Friendly Interface:** Powered by Streamlit for seamless interaction.
 
-### FAQ Chatbot for Café by Mars
-- **Pre-defined Contextual Responses:** Handles frequently asked questions about café hours, menu, location, contact details, specials, and more.
-- **Keyword Matching:** Matches user queries with relevant responses based on keywords.
-- **Default Responses:** Provides a polite fallback response if the input is unclear.
+
 
 ## Getting Started
 
@@ -53,30 +50,7 @@ pip install -r requirements.txt
    ```
 2. Open the provided local URL in your browser to access the interface.
 
-#### FAQ Chatbot
-1. Run the chatbot:
-   ```bash
-   python chatbot.py
-   ```
-2. Interact with the bot by asking questions like:
-   - "What are your hours?"
-   - "Do you offer free Wi-Fi?"
-   - "What's today's special?"
 
-3. Exit anytime by typing `exit` or `quit`.
-
-### Example FAQ Responses
-The chatbot uses the following context for responses:
-
-| **Keyword** | **Response** |
-|-------------|--------------|
-| `hours`     | "We are open from 8:00 AM to 12:00 AM, Sunday through Sunday." |
-| `location`  | "Mars is located at 123 Main Street, Downtown." |
-| `menu`      | "Our menu includes coffee, tea, latte, Spanish latte, hot chocolate, and sandwiches." |
-| `contact`   | "You can reach us at (123) 456-7890 or email us at contact@bymars.com." |
-| `wifi`      | "Yes, we offer free Wi-Fi. The password is 'MarsCafe2024121'." |
-| `specials`  | "Today's specials include Pumpkin Spice Latte and Blueberry Muffins." |
-| `prices`    | "Coffee is 20LE, Sandwiches are 15LE, tea is 15LE, Spanish latte is 30LE, and latte is 25LE." |
 
 ## Workflow and Architecture
 
@@ -88,11 +62,6 @@ The chatbot uses the following context for responses:
 5. **Keyword Extraction:** Employ TF-IDF vectorization to identify the most relevant keywords.
 6. **Highlights:** Match keywords to sentences in the text to create meaningful highlights.
 7. **Key Insights:** Generate actionable insights using NLP prompts and summarization models.
-
-### FAQ Chatbot
-1. **Keyword Matching:** Identify user intent based on pre-defined keywords.
-2. **Contextual Responses:** Provide accurate responses from the pre-defined context dictionary.
-3. **Default Fallback:** Handle unknown queries with a polite response.
 
 ## Models and Metrics
 

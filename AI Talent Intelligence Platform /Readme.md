@@ -200,6 +200,8 @@ AI Talent Intelligence Platform
 - Advanced Candidate Analysis
 
 ---
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 
 ## Learning Outcomes
 

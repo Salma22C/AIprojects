@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+spacy
+pypdf
+beautifulsoup4
+matplotlib

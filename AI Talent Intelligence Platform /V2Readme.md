@@ -90,7 +90,17 @@ FINAL CLASSIFICATION FOR: SARAH_JOHNSON
 Predicted Designation: Data Analyst
 ==========================================
 
-## 👩‍💻 Author
-Salma Mohamed — AI Engineer & Core Automation Developer 🚀
+## 💡 Key Insight
 
-Building scalable, production-grade NLP and Machine Learning workflows from the ground up.
+> Version 1 *compares resumes*  
+> Version 2 *understands resumes*
+
+This shift is what transforms it from a script into an **AI system**.
+
+---
+
+## 👩‍💻 Author
+
+**Salma Mohamed**  
+AI Engineer in Progress | NLP & Machine Learning Builder  
+Building real-world AI systems from scratch 🚀

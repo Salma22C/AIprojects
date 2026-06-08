@@ -17,6 +17,15 @@ These projects explore:
 
 # 🚀 Featured Projects
 
+#### [🧠 AI Talent Intelligence & Sentiment Platform (V2)](https://github.com/Salma22C/AIprojects)
+An enterprise-grade hiring analytics engine that transforms unstructured applicant text into structured talent data matrices.
+
+* **Dual-Engine Architecture:** Uses a supervised Machine Learning head (Naive Bayes) for explicit role classification alongside an aggregated vector space model (Cosine Similarity) for multi-domain matching.
+* **Semantic Analysis:** Implements advanced token preprocessing using `spaCy` (lemmatization, custom stop-words) and tracks linguistic confidence trends via standalone `vaderSentiment`.
+* **Hybrid Skills Benchmarking:** Generates real-time talent telemetry reports showcasing percentage affinity across multiple tech domains to instantly surface hybrid engineers.
+* **Tech Stack:** `Python`, `Scikit-Learn`, `spaCy`, `Pandas`, `Matplotlib`, `PyPDF`
+
+👉 **[Explore the Repository & Source Code](https://github.com/Salma22C/AIprojects)**
 ## 📌 TalentCheck AI
 Evaluator–Optimizer resume screening system using a self-correcting multi-agent loop to reduce hallucinations in candidate evaluation.
 

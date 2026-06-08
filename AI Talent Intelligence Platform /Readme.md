@@ -216,3 +216,8 @@ Through this project, I gained hands-on experience with:
 - Resume-job matching systems
 
 ---
+## 👩‍💻 Author
+
+**Salma Mohamed**  
+AI Engineer in Progress | NLP & Machine Learning Builder  
+Building real-world AI systems from scratch 🚀

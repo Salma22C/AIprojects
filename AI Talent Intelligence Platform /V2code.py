@@ -1,6 +1,3 @@
-Here is the clean, production-ready Python script extracted from your Jupyter Notebook. The cell blocks have been combined into a logical workflow structured for a repository or deployment environment.
-
-```python
 """
 AI Talent Intelligence Platform - Level 2
 Author: Salma Kassem (Pipeline Telemetry)
@@ -95,9 +92,9 @@ def main():
     processed_tokens = [
         token.lemma_.lower().strip()
         for token in resume_doc
-        if not token.is_stop 
-        and not token.like_num 
-        and token.is_alpha 
+        if not token.is_stop \
+        and not token.like_num \
+        and token.is_alpha \
         and token.text.strip()
     ]
     processed_text = " ".join(processed_tokens)
@@ -228,7 +225,9 @@ def main():
 
     fig, ax = plt.subplots(figsize=(10, 8))
     disp.plot(cmap=plt.cm.Blues, ax=ax, xticks_rotation=45)
-    plt.title("Talent Classifier: Confusion Matrix Heatmap", fontsize=14, fontweight=\"bold\")\n", fontsize=14, fontweight="bold")
+    
+    # FIXED: Cleared the string formatting syntax error that was present here
+    plt.title("Talent Classifier: Confusion Matrix Heatmap", fontsize=14, fontweight="bold")
     plt.tight_layout()
 
     plt.savefig(f"{output_dir}/model_confusion_matrix.png", dpi=300)
@@ -238,5 +237,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-```

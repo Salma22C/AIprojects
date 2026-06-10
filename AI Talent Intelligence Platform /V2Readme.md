@@ -1,114 +1,192 @@
-# 🧠 AI Talent Intelligence & Sentiment Platform (Version 2)
+# 🧠 AI Talent Intelligence Platform (Version 2)
 
-> 🔍 An end-to-end Talent Intelligence system that parses unstructured candidate data, maps core semantic frequencies, profiles text sentiment intensity, and uses a hybrid machine learning framework to classify profiles and measure multi-role domain similarity.
+An NLP and Machine Learning project that automatically processes resumes, extracts meaningful text features, and predicts the most suitable job role using supervised learning.
 
-🚀 Built to simulate an enterprise-level **AI hiring analytics engine** capable of automating high-volume resume parsing, talent discovery benchmarking, and cross-functional role categorization.
-
----
-
-## ⚡ Why This Project Exists
-
-Manual applicant screening creates severe operational bottlenecks in modern recruitment pipelines. This platform optimizes and automates talent operations by shifting from shallow keyword matching to structured semantic understanding, predictive modeling, and vector-space alignment.
-
-### The Core Solution:
-* **Automated Parsing:** Translates raw, noisy unstructured resume PDFs into highly normalized, clean text layers.
-* **Sentiment Profiling:** Applies contextual intensity rules via VADER to extract language patterns, distinguishing tone and structural confidence levels.
-* **Predictive Role Mapping:** Automatically classifies applicant data into concrete job titles using supervised ML.
-* **Hybrid Skill Analytics:** Evaluates directional vector alignment to output an executive percentage distribution match across all repository domains.
+The project demonstrates a complete NLP pipeline from raw PDF resumes to machine learning-based role classification.
 
 ---
 
-## 🧬 System Evolution
+# 🚀 Project Overview
 
-### 🟢 Version 1 — The Semantic Foundation
-* Robust PDF text parsing using `pypdf`.
-* Regex token normalization, advanced stop-word filtration, and language lemmatization via `spaCy`.
-* N-gram feature tracking (`ngram_range=(1, 2)`) leveraging Scikit-Learn's `CountVectorizer`.
-* Exploratory Data Analysis (EDA) plotting frequency metrics directly with `matplotlib`.
+The goal of this project is to automate resume understanding and job role identification.
 
-### 🔵 Version 2 — Predictive & Vector Intelligence Layer (Current)
-* **Standalone VADER Engine Integration:** Evaluates contextual polarity scoring directly on text structures, tracking multi-tiered sentiment features without heavy framework dependencies.
-* **Vector Space Feature Engineering:** Implements advanced token matrix modeling via `TfidfVectorizer` to balance term relevance across unbalanced text corpuses.
-* **Supervised Classifiers:** Integrates a trained **Multinomial Naive Bayes (`MultinomialNB`)** model to predict candidate roles across complex domains with **90% model test split accuracy**.
-* **Aggregated Cosine Similarity Matching:** Features a mathematical validation engine that aggregates vector angles to output a multi-role affinity percentage, spotlighting candidates with hybrid or cross-functional technical backgrounds.
-* **Fully Dynamic Input Pipeline:** Fully decoupled runtime architecture that dynamically profiles incoming candidate payloads, automatically resolving metadata profiles directly from system file paths.
+Instead of manually reviewing resumes, the system:
+
+1. Extracts text from PDF resumes
+2. Cleans and preprocesses text
+3. Converts text into numerical features
+4. Trains machine learning models on labeled resume data
+5. Predicts the most likely job role for unseen resumes
 
 ---
 
-## 🏗️ Architecture Flow
+# 🔄 Project Evolution
 
-```text
-               ┌─────────────────────────────────┐
-               │    Raw Candidate Resume PDF     │
-               └────────────────┬────────────────┘
-                                │
-                                ▼
-               ┌─────────────────────────────────┐
-               │   RegEx Cleaning & Text Scrub   │
-               │  (HTML, URLs, Emails Stripped)  │
-               └────────────────┬────────────────┘
-                                │
-                                ▼
-               ┌─────────────────────────────────┐
-               │       NLP Token Processing      │
-               │  (Lemmatization & Stop-words)   │
-               └────────┬────────────────────────┴────────┐
-                        │                                 │
-                        ▼                                 ▼
-         ┌─────────────────────────────┐   ┌─────────────────────────────┐
-         │    vaderSentiment Engine    │   │  TfidfVectorizer Pipeline   │
-         │  (Contextual Polarity Docs) │   │ (Bi-gram Vector Generation) │
-         └──────────────┬──────────────┘   └──────────────┬──────────────┘
-                        │                                 │
-                        ▼                                 ▼
-         ┌─────────────────────────────┐   ┌─────────────────────────────┐
-         │ Top/Bottom Sentiment Arrays │   │    Multi-Engine Analyser    │
-         │   (Confidence Extraction)   │   │  (Naive Bayes Matrix Head)  │
-         └─────────────────────────────┘   └──────────────┬──────────────┘
-                                                          │
-                                                          ▼
-                                           ┌─────────────────────────────┐
-                                           │  Cosine Similarity Engine   │
-                                           │  (Weighted Role Aggregator) │
-                                           └──────────────┬──────────────┘
-                                                          │
-                                                          ▼
-                                           ┌─────────────────────────────┐
-                                           │ Dynamic Terminal Dashboard  │
-                                           │ (Visual Metrics + Report)   │
-                                           └─────────────────────────────┘
-## 🛠️ Tech Stack & Dependencies
-Core Runtime: Python 3.10+
+## Version 1 – Resume Matching System
 
-Data Layout Engine: Pandas, NumPy, OpenPyXL
+Version 1 focused on semantic similarity.
 
-Natural Language Processing: spaCy (en_core_web_sm), vaderSentiment
+### Features
 
-Machine Learning & Core Metrics: Scikit-Learn
+* PDF Resume Parsing
+* Text Cleaning
+* spaCy Preprocessing
+* CountVectorizer
+* TF-IDF Vectorization
+* Cosine Similarity Matching
 
-System Files Parsing: PyPDF, BeautifulSoup4
+The system compared a resume against a job description and generated a similarity score.
 
-Data Visualization: Matplotlib
+### Example
 
-## 📊 System Output Telemetry Report
-===========================================================================
- ADVANCED TALENT INTELLIGENCE PIPELINE REPORT: SALMA_KASSSEM
-===========================================================================
-» COMPLETE FIT PERCENTAGE DISTRIBUTION BY ROLE DOMAIN:
----------------------------------------------------------------------------
-  • AI Engineer                       : 56.42%
-  • Data Scientist                    : 24.15%
-  • DevOps Engineer                   : 11.30%
-  • Full Stack Developer              : 8.13%
----------------------------------------------------------------------------
-» NAIVE BAYES CLASSIFIER PREDICTION    : AI ENGINEER
-» VECTOR SIMILARITY PREDICTED DOMAIN   : AI ENGINEER
-» COSINE ENGINE CONFIDENCE MATCH SCORE  : 56.42%
-===========================================================================
+Resume ↔ Job Description
+
+Match Score: 30.36%
 
 ---
 
-## 👩‍💻 Author
+## Version 2 – Talent Intelligence Platform
 
-**Salma Mohamed** **AI Engineer & Cloud Architect** | NLP & Machine Learning Builder  
-Specializing in end-to-end RAG pipelines, multi-agent frameworks, and intelligent automation systems. 🚀
+Version 2 upgrades the system from similarity matching to machine learning classification.
+
+Instead of comparing resumes with job descriptions, the system learns patterns from labeled resume datasets and predicts job roles directly.
+
+### Features
+
+* Resume PDF Parsing
+* Text Cleaning using Regex and BeautifulSoup
+* Tokenization and Lemmatization using spaCy
+* TF-IDF Feature Engineering
+* Train/Test Dataset Splitting
+* Naive Bayes Classification
+* Logistic Regression Evaluation
+* Unseen Resume Prediction
+
+### Supported Roles
+
+* AI Engineer
+* Data Scientist
+* Data Analyst
+* Backend Developer
+* Cloud Engineer
+* Product Manager
+
+---
+
+# 🏗️ System Architecture
+
+Raw Resume PDF
+↓
+PDF Text Extraction (PyPDF)
+↓
+Text Cleaning (Regex + BeautifulSoup)
+↓
+spaCy NLP Processing
+↓
+Tokenization + Stopword Removal + Lemmatization
+↓
+TF-IDF Vectorization
+↓
+Machine Learning Model
+↓
+Job Role Prediction
+
+---
+
+# 🛠️ Technologies Used
+
+## Programming
+
+* Python
+
+## NLP
+
+* spaCy
+* Regex
+* BeautifulSoup
+
+## Machine Learning
+
+* Scikit-Learn
+* TF-IDF Vectorizer
+* Multinomial Naive Bayes
+* Logistic Regression
+
+## Data Handling
+
+* Pandas
+
+## Visualization
+
+* Matplotlib
+
+## File Processing
+
+* PyPDF
+
+---
+
+# 📊 Model Evaluation
+
+Two machine learning models were evaluated:
+
+### Multinomial Naive Bayes
+
+* Fast baseline classifier
+* Effective for text classification problems
+* Works well on smaller datasets
+
+### Logistic Regression
+
+* Linear classification model
+* Better generalization on overlapping classes
+* Used to compare performance against Naive Bayes
+
+Example evaluation:
+
+* Naive Bayes Accuracy: 71.43%
+* Logistic Regression Accuracy: 71.43%
+
+---
+
+# 🔍 Sample Prediction Workflow
+
+Input:
+Resume PDF
+
+Output:
+
+Predicted Role:
+AI Engineer
+
+The model predicts the most likely role based on patterns learned from previously labeled resumes.
+
+---
+
+# 📚 Key Concepts Learned
+
+Through this project I applied:
+
+* Text Cleaning
+* Tokenization
+* Lemmatization
+* Feature Engineering
+* TF-IDF
+* Text Classification
+* Naive Bayes
+* Logistic Regression
+* Model Evaluation
+* Precision
+* Recall
+* F1 Score
+* Accuracy Analysis
+
+---
+
+# 👩‍💻 Author
+
+Salma Mohamed
+
+AI Engineer | Cloud Computing Teaching Assistant
+
+Interested in NLP, Machine Learning, LLM Applications, and AI Systems Engineering.

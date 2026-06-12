@@ -182,6 +182,11 @@ Through this project I applied:
 * Accuracy Analysis
 
 ---
+## Future Experiments
+
+During development, I explored Topic Modeling using Non-Negative Matrix Factorization (NMF) to discover hidden skill clusters across resumes. While the generated topics were interpretable and aligned with role domains such as AI, Cloud, Backend Development, and Data Analytics, the experiment highlighted an important machine learning insight: increasing feature complexity does not always improve classification performance, particularly on smaller datasets.
+
+Future versions may explore semantic topic modeling and embedding-based approaches for improved role understanding.
 
 # 👩‍💻 Author
 

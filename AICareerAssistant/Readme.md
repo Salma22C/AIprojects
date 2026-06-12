@@ -1,4 +1,4 @@
-# 📘 AI Career Advisor (RAG System)
+# 📘 AI Career Assistant (RAG System)
 
 An intelligent Arabic AI Career Advisor built using **Retrieval-Augmented Generation (RAG)** that recommends the best learning path from structured course data and explains *why* each choice fits the user.
 

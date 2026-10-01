@@ -75,7 +75,7 @@ toolkit for future RAG systems.
 
 **Tech:** Python • RAG • Embeddings • Retrieval Evaluation
 
-👉 [Repository](YOUR-RAG-DIAGNOSE-REPOSITORY-LINK)
+
 
 ---
 
@@ -134,29 +134,6 @@ review and refinement.
 
 ---
 
-# 🔬 Research Studies
-
-## COCOM — Context Embeddings for Efficient Answer Generation in RAG
-
-Research study exploring context embeddings and context compression for
-Retrieval-Augmented Generation.
-
-**Type:** Research Paper Study
-
-👉 [Paper / Study](YOUR-LINK)
-
----
-
-## RAGChecker — RAG Evaluation & Diagnostic Framework
-
-Research study focused on systematic evaluation and diagnosis of RAG systems,
-including retrieval and generation analysis.
-
-**Type:** Research Framework Study
-
-👉 [Paper / Framework](YOUR-LINK)
-
----
 
 # 🧰 Core Technologies
 

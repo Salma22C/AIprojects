@@ -1,8 +1,3 @@
-Yes 😭 — much simpler. For the portfolio, each project should be a **short teaser + repo link**, not a full README.
-
-I’d use this structure:
-
-```markdown
 # 🧠 AI Projects Portfolio
 
 A collection of AI, Machine Learning, NLP, and RAG projects focused on building
@@ -170,19 +165,4 @@ SentenceTransformers • FAISS • RAG • LLMs • OpenRouter •
 FastAPI • Flask • Streamlit • Gradio • Docker • Git
 ```
 
-### The key idea
 
-Your portfolio should **not duplicate the README**.
-
-Think:
-
-> **Portfolio = what I built + why it matters + repo**
-
-> **GitHub README = how I built it + experiments + details**
-
-And for your RAG work:
-
-> **COCOM / RAGChecker → Research I studied**  
-> **rag-diagnose → My independent engineering work**
-
-That distinction is exactly what you want.
